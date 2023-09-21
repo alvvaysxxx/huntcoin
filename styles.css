@@ -68,7 +68,7 @@ footer {
 }
 
 .main {
-  background-image: url("images/cryptobg.png");
+  background-image: url("cryptobg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
