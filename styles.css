@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  background-color: #000000;
+}
+
+.one {
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+h1 {
+  font-family: "Staatliches";
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.648);
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.red {
+  color: #ef233c;
+}
+.huntcoin-title {
+  font-size: 25vw;
+  text-align: center;
+  color: #ef233c;
+  letter-spacing: 0.01em;
+}
+
+.huntcoin-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.huntcoin-item {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #ef233c;
+}
+
+.main {
+  background-image: url("images/cryptobg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-title,
+h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  color: white;
+}
+
+.main-paragraph,
+.chc-paragraph {
+  padding-top: 8px;
+
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.648);
+}
+
+.highlight {
+  color: #ef233c;
+  text-shadow: 0px -5px 25px #ff0b0b;
+}
+
+.main-features {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.features > .feature {
+  flex: 1; /* Равномерное распределение места между элементами */
+  flex-basis: 33%; /* Ширина элемента (одна треть от контейнера) */
+  text-align: center; /* Выравнивание текста по центру, если нужно */
+  margin: 5px; /* Небольшие отступы между элементами */
+}
+
+.feature {
+  border: 2px solid #ef233c;
+  padding: 50px 30px;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-thgame {
+  margin-top: 25px;
+}
+
+.main-socialmedia {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.two {
+  background-color: #000000;
+  padding-top: 20px;
+}
+
+.two-container {
+  width: 90vw;
+  margin: 0 auto;
+  border: 1px solid #ef233c;
+  border-radius: 15px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.roadmap-title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.roadmap-phase {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 18px;
+  width: 200px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 10px;
+}
+.roadmap-phase-description {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  width: 200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.roadmap-phase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.chart {
+  width: 100%;
+}
+
+.three {
+  padding-top: 25px;
+  background-color: #000000;
+}
+
+@media (min-width: 591px) {
+  .chart {
+    width: 70%;
+  }
+}
+
+@media (min-width: 870px) {
+  .chart {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .chart {
+    width: 30%;
+  }
+}
