@@ -43,6 +43,49 @@ footer {
   margin-bottom: 50px;
 }
 
+button {
+  all: unset;
+  background-color: #ef233c;
+  color: white;
+  font-family: "Montserrat";
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+hr {
+  border-color: #ef233c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
 .red {
   color: #ef233c;
 }
@@ -142,6 +185,14 @@ h2 {
   gap: 10px;
 }
 
+.why {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .main-thgame {
   margin-top: 25px;
 }
@@ -155,6 +206,27 @@ h2 {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Позволяет горизонтальному скроллингу */
+  scroll-snap-type: x mandatory; /* Определяет, как элементы привязываются при скроллинге */
+  width: 100%; /* Убедитесь, что контейнер занимает всю доступную ширину */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card--content {
+  scroll-snap-align: start; /* Как элементы привязываются при скроллинге */
+  margin-right: 20px; /* Расстояние между карточками */
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .two {
@@ -240,6 +312,12 @@ h2 {
   }
 }
 
+@media (max-width: 591px) {
+  .screenshot {
+    width: 350px;
+  }
+}
+
 @media (min-width: 870px) {
   .chart {
     width: 50%;
@@ -250,4 +328,29 @@ h2 {
   .chart {
     width: 30%;
   }
+}
+
+/* Стилизация вертикального скроллбара */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px; /* Ширина вертикального скроллбара */
+  height: 6px;
+}
+
+/* Стилизация ползунка вертикального скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #ef233c; /* Цвет ползунка */
+  border-radius: 5px; /* Закругление углов ползунка */
+}
+
+/* Стилизация ползунка горизонтального скроллбара */
+::-webkit-scrollbar-thumb-horizontal {
+  background-color: #ef233c; /* Цвет ползунка */
+  border-radius: 5px; /* Закругление углов ползунка */
+}
+
+/* Стилизация трека вертикального и горизонтального скроллбаров */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Прозрачный цвет трека */
+  border-radius: 5px; /* Закругление углов ползунка */
 }
