@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   background-color: #000000;
 }
